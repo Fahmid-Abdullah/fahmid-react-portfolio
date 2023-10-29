@@ -1,0 +1,622 @@
+/* Custom Fonts */
+@font-face {
+  font-family: Roboto;
+  src: url('./assets/fonts/robotoslab.ttf');
+}
+@font-face {
+  font-family: titillium;
+  src: url('./assets/fonts/titillium.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+.link {
+  color: #61dafb;
+}
+
+.link:hover {
+  color: #85e6ed;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.project  h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.skill h4 { 
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.App {
+  text-align: center;
+  
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
+}
+
+nav.navbar {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32 ease-in-out;
+}
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+
+nav.navbar a.navbar-brand {
+  width: 20%;
+  color: #fff
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+  opacity: 1;
+}
+
+span.navbar-text {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 14px;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+}
+
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+
+.social-icon a img {
+  width: 40%;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.social-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(50);
+}
+
+.navbar-text button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-text button span {
+  z-index: 1;
+}
+
+.navbar-text button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-text button:hover {
+  color: #121212;
+}
+
+.navbar-text button:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+} 
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+  border-bottom: 2px solid #fff;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+  width: 24px;
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  content: '';
+  z-index: 2;
+  transition: all 300ms linear;
+}
+
+nav.navbar .navbar-toggler-icon:after {
+  top: 8px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after { 
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria="true"] .navbar-toggler-icon:before {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent;
+}
+
+/* Banner */
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/banner.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background-color: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5), -5.91, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 50px;
+  font-weight:700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner p {
+  color: #B8B8B8;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  display: inline;
+}
+
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner button:hover svg {
+  margin-left: 25px;
+}
+
+.banner img {
+  opacity: 0;
+  animation: myAnim 2s ease-in-out 1s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+/* Skills */
+.skill {
+  margin-top: 100px;
+  padding: 0 0 50px 0;
+  max-height: 450px;
+  min-width: 45px;
+  position: relative;
+  
+}
+.skill-bx {
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+  border-radius: 10px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.skill h5 {
+  font-size: 20px;
+}
+
+.skill p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1px 1px;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 70%;
+  margin: 0 auto auto auto;
+}
+
+.item img:hover {
+  width: 75%;
+  color: red;
+}
+
+/* Projects */
+.project {
+  justify-content: space-between;
+  padding: 10px 0 50px 0;
+  max-width: 1500px;
+  min-height: 100px;
+  position: relative;
+
+  padding: 30px 30px;
+  margin-top: 200px;
+  margin-left: 160px;
+  
+  border-radius: 10px;
+}
+
+.project .project-title {
+  padding: 10px 20px;
+}
+
+.project-container {
+  display: flex;
+  max-height: 350px;
+  padding: 1px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  overflow-y: auto;
+}
+
+.project h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.project p {
+  font-weight: 200;
+}
+
+.project-text {
+  padding-top: 10px;
+}
+
+.project-list {
+  flex: 1;
+  margin-right: 30px;
+  background-color: #000;
+  overflow-y: auto;
+}
+
+.project-box {
+  border: 1px solid #424242;
+  padding: 10px;
+  font-size: 21px;
+  margin-bottom: -1px;
+}
+
+.project-box:hover {
+  background-color: #666;
+  font-size: 25px;
+}
+
+.project-description {
+  flex: 2;
+  padding: 20px;
+  white-space: pre-line;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    50deg,
+    hsl(240deg 23% 6%) 0%,
+    hsl(240deg 18% 7%) 0%,
+    hsl(240deg 14% 7%) -1%,
+    hsl(240deg 12% 8%) -1%,
+    hsl(240deg 10% 9%) -1%,
+    hsl(240deg 8% 9%) -1%,
+    hsl(239deg 7% 10%) 0%,
+    hsl(239deg 7% 10%) 1%,
+    hsl(239deg 6% 11%) 2%,
+    hsl(239deg 5% 11%) 3%,
+    hsl(239deg 5% 12%) 5%,
+    hsl(239deg 4% 12%) 7%,
+    hsl(239deg 3% 13%) 10%,
+    hsl(239deg 3% 14%) 14%,
+    hsl(239deg 2% 14%) 19%,
+    hsl(240deg 2% 15%) 25%,
+    hsl(240deg 2% 15%) 33%,
+    hsl(240deg 1% 16%) 43%,
+    hsl(240deg 1% 16%) 54%,
+    hsl(240deg 1% 17%) 68%,
+    hsl(240deg 0% 18%) 83%,
+    hsl(0deg 0% 18%) 100%
+  );
+}
+
+.loading-container {
+  margin-top: -40px; /* Adjust the margin to position it higher or lower */
+}
+
+/* Scrollbar */
+/* Track */
+.project-list::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+.project-list::-webkit-scrollbar-thumb {
+  background: #424242; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle on hover */
+.project-list::-webkit-scrollbar-thumb:hover {
+  background: #fff; /* Color on hover */
+}
+
+.about {
+  margin-top: 200px;
+}
+
+.about h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.about-container {
+  white-space: pre-line;
+  margin-top: 20px;
+  min-height: 100px;
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.about-paragraph {
+  padding: 10px 45px;
+  max-width: 1000px;
+  
+}
+
+.about-me-title {
+  display: grid;
+}
+
+.about li {
+  text-align: left;
+  line-height: 30px;
+}
+
+.about p {
+  line-height: 27px;
+}
+
+.about h6 {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.about h7 {
+  display: block;
+}
+
+.about small {
+  letter-spacing: 0.5px;
+}
+
+.about-me-content {
+  display: flex;
+  max-height: 350px;
+  padding: 1px;
+  cursor: pointer;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.about-me-text {
+  background-color: #282c34;
+}
+
+.academic-text {
+  background-color: #282c34;
+  min-width: 650px;
+}
+
+.about-me-contact {
+  background-color: #282c34;
+}
+
+.about-me-text:hover {
+  background-color: #3c4049;
+}
+
+.academic-text:hover {
+  background-color: #3c4049;
+}
+
+.about-me-contact:hover {
+  background-color: #3c4049;
+}
+
+.about button {
+  background-color: #B8B8B8;
+  border-radius: 5px;
+  padding: 7px;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.about button:hover {
+  font-size: 17px;
+  background-color: aliceblue;
+}
+
+.footer {
+  margin-top: 100px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
