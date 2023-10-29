@@ -46,7 +46,7 @@ export const About = () => {
                 <h7 className="about-paragraph">Github Projects: <a className="link" href="https://github.com/Fahmid-Abdullah" target="_blank">GitHub</a></h7>
                 <h7 className="about-paragraph">Itch.io Games: <a className="link" href="https://ainsire.itch.io" target="_blank">Itch.io</a></h7>
                 <p><br/><br/><br/><b>Download my Resume</b></p>
-                <button onClick={() => window.open('https://drive.google.com/file/d/1Vj1CZJ6IHtmPR5giQ5o6s-NkK-Q4i3yC/view?usp=sharing')}>Download <ArrowDownCircle size={25}/></button>
+                 <button onClick={() => window.open('https://drive.google.com/file/d/1Vj1CZJ6IHtmPR5giQ5o6s-NkK-Q4i3yC/view?usp=sharing')}>Download <ArrowDownCircle size={25}/></button>
             </div>
 
             </div>
