@@ -49,6 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 .about h4 {
   font-size: 20px;
   font-weight: 400;
+  text-align: left;
+  margin-left: 30px;
 }
 
 .App {
@@ -521,6 +523,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .about h6 {
   margin-top: -5px;
   margin-bottom: -5px;
+  text-align: left;
+  margin-left: 30px;
 }
 
 .about h7 {
@@ -542,7 +546,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about-me-text {
-  background-color: #282c34;
+  background-color: #303338;
 }
 
 .academic-text {
@@ -551,7 +555,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about-me-contact {
-  background-color: #282c34;
+  background-color: #303338;
 }
 
 .about-me-text:hover {

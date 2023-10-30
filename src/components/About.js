@@ -10,11 +10,10 @@ export const About = () => {
             
             <div className="about-container">
             <div className="about-me-text">
-                <h3><br/>Who Am I?<br/><br/></h3>
-                <p className="about-paragraph">Welcome to my portfolio! I'm Fahmid Abdullah, a third year of Computer Science at Western University. I'm an aspiring software/web developer on a never-ending pursuit for knowledge. While my primary expertise lies in backend development, my journey has recently taken an exciting turn as I delve into the world of frontend development as well.</p>
+                <h3><br/>Fun Facts<br/><br/></h3>
                 <p className="about-paragraph">My favorite pastime is one you've probably never heard of – programming! I've become genuinely captivated by front-end development, breathing life into back-end projects, with my eyes set on becoming a full-stack developer.</p>
                 <p className="about-paragraph">When I'm not glued to my keyboard, I enjoy experimenting with new dishes, diving into books by Paulo Coelho, and gradually advancing in the games I'm crafting. Feel free to check them out on Itch.io. I'm relatively new to game development, so any feedback would be greatly appreciated.</p>
-                <p className="about-paragraph">Finally, I'm currently engaged in large scale projects for both the <b>Western Cyber Society</b> and <b>Western Developer's Society</b>.</p>
+                <p className="about-paragraph">I'm an aspiring software/web developer on a never-ending pursuit for knowledge. While my primary expertise lies in backend development, my journey has recently taken an exciting turn as I delve into the world of frontend development.</p>
             </div>
 
             <div className="academic-text">
@@ -45,7 +44,7 @@ export const About = () => {
                 <h7 className="about-paragraph">LinkedIn Profile: <a className="link" href="https://ca.linkedin.com/in/fahmid-abdullah" target="_blank">LinkedIn</a></h7>
                 <h7 className="about-paragraph">Github Projects: <a className="link" href="https://github.com/Fahmid-Abdullah" target="_blank">GitHub</a></h7>
                 <h7 className="about-paragraph">Itch.io Games: <a className="link" href="https://ainsire.itch.io" target="_blank">Itch.io</a></h7>
-                <p><br/><br/><br/><b>Download my Resume</b></p>
+                <p><br/><br/><b>Download my Resume</b></p>
                 <button onClick={() => window.open('https://drive.google.com/file/d/1Vj1CZJ6IHtmPR5giQ5o6s-NkK-Q4i3yC/view?usp=sharing')}>Download <ArrowDownCircle size={25}/></button>
             </div>
 
