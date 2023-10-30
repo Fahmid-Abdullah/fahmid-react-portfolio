@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fahmid-react-portfolio/static/css/main.f7f06aff.css",
-    "main.js": "/fahmid-react-portfolio/static/js/main.2d15b6ad.js",
+    "main.css": "/fahmid-react-portfolio/static/css/main.06970378.css",
+    "main.js": "/fahmid-react-portfolio/static/js/main.c8b9fa02.js",
     "static/js/787.a988f3c4.chunk.js": "/fahmid-react-portfolio/static/js/787.a988f3c4.chunk.js",
     "static/media/robotoslab.ttf": "/fahmid-react-portfolio/static/media/robotoslab.677d14da87bce007211b.ttf",
     "static/media/pfp.png": "/fahmid-react-portfolio/static/media/pfp.46f8360f3491e9fafc20.png",
@@ -21,12 +21,12 @@
     "static/media/revicons.woff": "/fahmid-react-portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/logo.svg": "/fahmid-react-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/fahmid-react-portfolio/index.html",
-    "main.f7f06aff.css.map": "/fahmid-react-portfolio/static/css/main.f7f06aff.css.map",
-    "main.2d15b6ad.js.map": "/fahmid-react-portfolio/static/js/main.2d15b6ad.js.map",
+    "main.06970378.css.map": "/fahmid-react-portfolio/static/css/main.06970378.css.map",
+    "main.c8b9fa02.js.map": "/fahmid-react-portfolio/static/js/main.c8b9fa02.js.map",
     "787.a988f3c4.chunk.js.map": "/fahmid-react-portfolio/static/js/787.a988f3c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7f06aff.css",
-    "static/js/main.2d15b6ad.js"
+    "static/css/main.06970378.css",
+    "static/js/main.c8b9fa02.js"
   ]
 }
