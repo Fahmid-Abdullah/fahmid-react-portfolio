@@ -297,6 +297,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
+
 .banner img {
   opacity: 0;
   animation: myAnim 2s ease-in-out 1s 1 normal forwards;

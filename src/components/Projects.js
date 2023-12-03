@@ -6,6 +6,7 @@ export const Projects = () => {
     const [loading, setLoading] = useState(false);
 
     const projects = [
+        {name: '[ MERN ] Todo App', description: "\nThis program allows the user to add, edit, and delete tasks linked to a MongoDB database.\n\nMakes use of MERN Stack.\n\nInstructions: Download the code as a zip file, extract into a folder, open with an IDE and run command npm start in the terminal.\n\n\nTry it Out: https://github.com/Fahmid-Abdullah/Notate"},
         {name: '[ JavaScript ] User Card Generator', description: "\nThis program generates a random user card everytime the button is clicked. The card contains full name, gender, employment title, employment key skill, and address.\n\nMakes use of Random Data API.\n\nInstructions: Download the HTML, CSS, and JavaScript files and place them in the same folder. Then, run the HTML file.\n\n\nTry it Out: https://github.com/Fahmid-Abdullah/user-card-generator"},
         {name: '[ JavaScript ] Stopwatch', description: "\nThis program is a standard stopwatch.\n\nInstructions: Download the HTML, CSS, and JavaScript files and place them in the same folder. Then, run the HTML file.\n\n\nTry it Out: https://github.com/Fahmid-Abdullah/stopwatch"},
         {name: '[ JavaScript ] Joke Generator', description: "\nThis program generates a random joke everytime the button is clicked.\n\nMakes use of Joke API.\n\nInstructions: Download the HTML, CSS, and JavaScript files and place them in the same folder. Then, run the HTML file.\n\n\nTry it Out: https://github.com/Fahmid-Abdullah/joke-generator"},

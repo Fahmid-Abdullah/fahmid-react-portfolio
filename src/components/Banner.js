@@ -54,7 +54,7 @@ export const Banner = () => {
                         <button onClick={() => window.location.href = "#about"}>Let's Connect <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} className="pfp" alt="Headder Img"/> 
+                        <img src={headerImg} className="pfp" alt="Header Img"/> 
                     </Col>
                 </Row>
             </Container>
