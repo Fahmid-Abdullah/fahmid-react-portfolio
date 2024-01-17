@@ -80,7 +80,7 @@ export const ProjectDescription = ({ project, loading }) => {
                               if (link) {
                                   return (
                                       <span key={index}>
-                                          Try it Out: <a className="link" href={link[0]} target="_blank" rel="noopener noreferrer">
+                                          Check it Out: <a className="link" href={link[0]} target="_blank" rel="noopener noreferrer">
                                               {link[0]}
                                           </a>
                                       </span>
